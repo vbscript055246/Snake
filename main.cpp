@@ -137,27 +137,27 @@ int main(){
 
 	while(1){
 		
-        if (GetAsyncKeyState(87) == -32767 && d!=4)
-        	d = 2;
-        if (GetAsyncKeyState(65) == -32767 && d!=3)
-        	d = 1;
-        if (GetAsyncKeyState(83) == -32767 && d!=2)
-        	d = 4;
-        if (GetAsyncKeyState(68) == -32767 && d!=1)
-        	d = 3;
-        /*	
-        if (GetAsyncKeyState(48) == -32767){
-        	temp.FNB = SK.size()-1;
-        	SK.push_back(temp);
+        	if (GetAsyncKeyState(87) == -32767 && d!=4)
+        		d = 2;
+        	if (GetAsyncKeyState(65) == -32767 && d!=3)
+        		d = 1;
+        	if (GetAsyncKeyState(83) == -32767 && d!=2)
+        		d = 4;
+        	if (GetAsyncKeyState(68) == -32767 && d!=1)
+        		d = 3;
+        	/*	
+        	if (GetAsyncKeyState(48) == -32767){
+        		temp.FNB = SK.size()-1;
+        		SK.push_back(temp);
 			update_map(map,FD);
-        }
-        */
-        if(FD.check()){
-        	temp.FNB = SK.size()-1;
-        	SK.push_back(temp);
+        	}
+        	*/
+        	if(FD.check()){
+        		temp.FNB = SK.size()-1;
+        		SK.push_back(temp);
 			update_map(map,FD);
 			FD.to_food(map);
-        }
+        	}
         
 		update_map(map,FD);
 		
